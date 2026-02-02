@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(to bottom right, #3a1c71, #d76d77, #ffaf7b);
+      color: #f5f5f5;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: 300;
+    }
+
+    nav {
+      margin: 30px 0;
+    }
+
+    nav button {
+      background: #2c2c54;
+      color: #ffffff;
+      border: none;
+      padding: 12px 20px;
+      margin: 8px;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background: #ffe6eb;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: none;
+      background: rgba(0,0,0,0.4);
+      margin: 20px auto;
+      padding: 30px;
+      max-width: 700px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    section.active {
+      display: block;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 15px;
+      margin: 15px 0;
+      color: #ffffff;
+    }
+
+    .reason-box {
+      font-size: 1.3rem;
+      margin: 20px 0;
+      min-height: 60px;
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Happy Valentine’s Day, My Love 💕</h1>
+    <h2>Just for You, Always</h2>
+    <p>— From: Your Priyu 💖</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('story')">Our Story</button>
+    <button onclick="showSection('notes')">Love Notes</button>
+    <button onclick="showSection('quiz')">Quiz</button>
+    <button onclick="showSection('reasons')">Reasons I Love You</button>
+    <button onclick="showSection('surprise')">Surprise</button>
+    <button onclick="showSection('promise')">My Promise 💍</button>
+    <button onclick="showSection('soundtrack')">Our Soundtrack 🎵</button>
+    <button onclick="showSection('gallery')">Our Photos 📸</button>
+  </nav>
+
+  <!-- Our Story -->
+  <section id="story" class="active">
+    <h2>Our Love Story 💌</h2>
+
+    <div class="card">
+      <h3>How We Met</h3>
+      <p>We first met on 28th Nov and I knew you were special from the start.</p>
+    </div>
+
+    <div class="card">
+      <h3>First Call / Date</h3>
+      <p>I still remember that night when we looked into each other eyes like it was yesterday.</p>
+    </div>
+
+    <div class="card">
+      <h3>My Favorite Memory</h3>
+      <p>My favorite moment with you is that last whole day when we were together and that hug and unspoken words which told so many things</p>
+    </div>
+
+    <div class="card">
+      <h3>Our Future</h3>
+      <p>I can’t wait to love and be with you for life. Forever sounds perfect with you.</p>
+    </div>
+  </section>
+
+  <!-- Love Notes -->
+  <section id="notes">
+    <h2>Little Love Notes 💌</h2>
+
+    <div class="card">
+      <p>"No matter how far you are, you’re always close to my heart." 💖</p>
+    </div>
+
+    <div class="card">
+      <p>"Every day with you, even from miles away, feels special." 🌸</p>
+    </div>
+
+    <div class="card">
+      <p>"You are my favorite notification, my favorite voice, my favorite person." 🥰</p>
+    </div>
+
+    <div class="card">
+      <p>"One day, I’ll hold your hand and never let go." ✨</p>
+    </div>
+  </section>
+
+  <!-- Reasons -->
+  <section id="reasons">
+    <h2>Reasons I Love You 💖</h2>
+
+    <div class="reason-box" id="reasonBox">
+      Click the button to see a reason!
+    </div>
+
+    <button onclick="showReason()">Show Me 💕</button>
+  </section>
+
+  <!-- Quiz -->
+  <section id="quiz">
+    <h2>Love Quiz 🥰</h2>
+
+    <p><strong>Question:</strong> Who fell in love first?</p>
+
+    <button onclick="quizAnswer('wrong')">You 😏</button>
+    <button onclick="quizAnswer('right')">Me 💖</button>
+
+    <p id="quizResult"></p>
+  </section>
+
+  <!-- Surprise -->
+  <section id="surprise">
+    <h2>For You Only 💝</h2>
+
+    <p>
+      Hey My Love ❤️
+
+      
+
+I wanted to do something special for you today, not because it’s Valentine’s Day, but because you mean everything to me.
+
+That night of 4.12.25 will always stay close to my heart — the night that brought us closer than ever.
+From the moment I shyly asked you to click a picture with me, to our long drive filled with laughs and silence that felt perfect… every moment with you feels magical.
+And that last hug at the station… I still carry it with me every day.
+It reminds me that no matter how far we are, my heart is always with you.
+Every single day with you becomes my favorite memory.
+Your care, your smile, your voice — everything about you makes my world brighter.
+You make me feel safe, loved, and understood in ways I never knew were possible.
+
+Thank you for choosing me, for standing by me, and for loving me the way you do. 
+I promise to keep choosing you, every day, in every lifetime.
+
+      Will you be my Valentine… today, tomorrow, and always? 💕
+
+Forever yours,
+Priyu 💖
+    </p>
+
+    <p>
+      I promise to love you more every single day. 💕
+    </p>
+
+    <h3>💋 One Million Kisses Coming Your Way 💋</h3>
+  </section>
+
+  <!-- Soundtrack -->
+  <section id="soundtrack">
+    <h2>Our Soundtrack 🎶💖</h2>
+
+    <p>Songs that remind me of you and us 🥰 (Tap to play in Spotify)</p>
+
+    <div class="card">
+      <h3>🎵 Boyfriend — Karan Aujla</h3>
+      <p>This song makes me think of you 💕</p>
+      <a href="https://open.spotify.com/track/3ExgWVPWOQts9RVBkqpdic" target="_blank">
+        <button style="background:#1DB954; color:white; border:none; padding:10px 18px; border-radius:20px; cursor:pointer; font-size:1rem;">▶ Play on Spotify</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>🎵 Aadat — AP Dhillon</h3>
+      <p>Because it feels like us 🥺💖</p>
+      <a href="https://open.spotify.com/track/1tlFHs9EuvokJgdcacWUV8" target="_blank">
+        <button style="background:#1DB954; color:white; border:none; padding:10px 18px; border-radius:20px; cursor:pointer; font-size:1rem;">▶ Play on Spotify</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>🎵 Lag Jaa Gale — Lata Mangeshkar</h3>
+      <p>Old school romance, just like us 💞</p>
+      <a href="https://open.spotify.com/track/5Y5c5bJK0O7KJDDAYKkppH" target="_blank">
+        <button style="background:#1DB954; color:white; border:none; padding:10px 18px; border-radius:20px; cursor:pointer; font-size:1rem;">▶ Play on Spotify</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>🎵 Tum Ho — Arijit Singh</h3>
+      <p>You are my "Tum Ho" forever 🥰❤️</p>
+      <a href="https://open.spotify.com/track/56zZ48jdyY2oDXHVnwg5Di" target="_blank">
+        <button style="background:#1DB954; color:white; border:none; padding:10px 18px; border-radius:20px; cursor:pointer; font-size:1rem;">▶ Play on Spotify</button>
+      </a>
+    </div>
+
+  </section>
+
+ 
+  </section>
+
+  <!-- Promise Section -->
+  <section id="promise">
+    <h2>My Promise to You 💖✨</h2>
+
+    <div class="card">
+      <h3>🌸 Always Yours</h3>
+      <p>No matter where life takes us, my heart will always choose you.</p>
+    </div>
+
+    <div class="card">
+      <h3>🤍 Through Everything</h3>
+      <p>I promise to stand by you in every smile, every tear, and every dream.</p>
+    </div>
+
+    <div class="card">
+      <h3>💞 Forever Us</h3>
+      <p>You are not just my today, you are my forever.</p>
+    </div>
+
+    <p style="font-size:1.2rem; margin-top:20px;">
+      I love you more than words can ever say 🥰❤️
+    </p>
+  </section>
+
+    <!-- Gallery -->
+  <section id="gallery">
+    <h2>Our Beautiful Memories 📸💖</h2>
+
+    <p>Two pictures, one real and one dreamy — both showing how perfect we are together 🥰</p>
+
+    <div class="card">
+      <img src="couple1.jpg" alt="Our Real Picture" style="width:100%; max-width:500px; border-radius:20px; margin:15px 0;">
+      <p>💑 Our Real Moment Together</p>
+    </div>
+
+    <div class="card">
+      <img src="couple2.jpg" alt="Our AI Picture" style="width:100%; max-width:500px; border-radius:20px; margin:15px 0;">
+      <p>✨ Our Dreamy Version</p>
+    </div>
+
+    <p style="font-size:1.2rem; margin-top:20px;">No matter real or art, my favorite picture is always "Us" 💞</p>
+  </section>
+
+  <footer>
+    Made with ❤️ just for you
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => section.classList.remove('active'));
+
+      document.getElementById(id).classList.add('active');
+    }
+
+    const reasons = [
+      "You always make me smile.",
+      "You understand me like no one else.",
+      "You are the most beautiful person in this world oviously .",
+      "You’re my safe place.",
+      "You’re cute even when sleepy.",
+      "You make distance feel small.",
+      "You love me the way I am.",
+      "You feel like home.",
+      "You’re my peace in chaos.",
+      "You’re my favorite person forever."
+    ];
+
+    function showReason() {
+      const random = Math.floor(Math.random() * reasons.length);
+      document.getElementById("reasonBox").innerText = reasons[random];
+    }
+
+    function quizAnswer(type) {
+      const result = document.getElementById("quizResult");
+
+      if (type === "right") {
+        result.innerText = "Correct! But you fell harder 😘💖";
+      } else {
+        result.innerText = "Wrong! But I love you anyway 😜💕";
+      }
+    }
+  
+
+    
+
+    // Button animation
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach(btn => {
+      btn.addEventListener("mouseover", () => {
+        btn.style.boxShadow = "0 0 15px rgba(255,255,255,0.7)";
+      });
+
+      btn.addEventListener("mouseout", () => {
+        btn.style.boxShadow = "none";
+      });
+    });
+
+  </script>
+
+</body>
+</html>
